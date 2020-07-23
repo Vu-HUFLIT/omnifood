@@ -211,3 +211,106 @@ transform: để phóng to hình lên 1.15% --> sẽ gây tràn container
     opacity: 1; /*Hình ban đầu mờ*/
     transform: scale(1.03);
 }
+
+/*////////////////////////////////////////*/
+/* HOW IT WORKS  */
+/*////////////////////////////////////////*/
+.section-steps {
+    background-color: rgb(247, 247, 247);
+}
+
+
+/*Hình điện thoại*/
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+/*Phần kế bên điện thoại*/
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+/*Chỉnh hình điện thoại nhỏ xuống*/
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+/* Vẽ khung tròn */
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+/* Xử lý clear cái float */
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: '-';
+    clear: both;
+    display: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* City */
+/* Chỉnh hình City */
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secret*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+/*Tạo hiệu ứng lằn gạch chân cho link twitter*/
+.section-cities a:link,
+.section-cities a:visited
+{
+    text-decoration: none;
+    color: #e67e22;
+    border-bottom: 2px solid transparent; /* Ban đầu có gạch nhưng che lại */
+    transition: border-bottom 0.2s;
+    padding: 8px 0; /* Lằn gạch chân nằm dưới 8px */
+}
+.section-cities a:hover,
+.section-cities a:active
+ {
+    border-bottom: 2px solid #e67e22
+}
+
